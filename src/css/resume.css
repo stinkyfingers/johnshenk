@@ -1,0 +1,103 @@
+body {
+	color: rbga(20, 20, 20, .8);
+	font-family: courier;
+	font-size: .8em;
+	margin: 0;
+}
+
+h4, h5, h6 {
+	margin: .1em;
+}
+.small {
+	font-size: .6em;
+}
+
+.bubbleBox {
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(20, 20, 20, .1);
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px 0 #666;
+	padding: .6em;
+	width: 31%;
+	min-height: 200px;
+	margin-bottom: .6em;
+}
+.bubbleBox .left {
+	font-size: .8em;
+}
+.bubbleBox .center {
+	text-align: center;
+}
+.centerBox {
+	vertical-align: top;
+}
+.evens {
+	background-color: rgba(0,0,0,.1)
+}
+.noMargin{
+	margin: 0;
+}
+.leftAlign {
+	text-align: left;
+}
+
+.inlineHeader {
+	margin: 0;
+}
+
+.contact {
+	border-top: 3px solid black;
+}
+.address{
+	display: block;
+	margin: auto;
+	width: 20em;
+	text-align: left;
+}
+.digits {
+	margin: auto;
+	width: 30em;
+	text-align: left;
+}
+
+.contact, .objective, .projects, .experience, .education, .certification, .references, .tech, .expertise, .goodies {
+	padding: 1em;
+}
+
+.jobDescription {
+	font-size: .8em;
+}
+.objectiveList, .expertise{
+	margin: auto;
+	width: 50%;
+}
+
+.job {
+	padding-bottom: 1em;
+}
+.job>div{
+	margin-left: 2em;
+}
+
+.certification, .education {
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+}
+
+.techList {
+	list-style-type: none;
+}
+.techList>li{
+	padding-top: .2em;
+}
+.ital {
+	font-style: oblique;
+}
+
+@media (max-width: 1024px) {
+	.objectiveList, .expertise {
+		width: 90%;
+	}
+}

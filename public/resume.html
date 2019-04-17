@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>John Shenk</title>
+		<style>
+			body {
+				color: rbga(20, 20, 20, .8);
+				font-family: courier;
+				font-size: .8em;
+				margin: 0;
+			}
+
+			h4, h5, h6 {
+				margin: .1em;
+			}
+			.small {
+				font-size: .6em;
+			}
+
+			.bubbleBox {
+				display: inline-block;
+				vertical-align: top;
+				background-color: rgba(20, 20, 20, .1);
+				border-radius: 4px;
+				box-shadow: 1px 1px 2px 0 #666;
+				padding: .6em;
+				width: 31%;
+				min-width: 320px;
+				min-height: 200px;
+				margin-bottom: .6em;
+			}
+			.bubbleBox .left {
+				font-size: .8em;
+			}
+			.bubbleBox .center {
+				text-align: center;
+			}
+			.centerBox {
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+			}
+			.evens {
+				background-color: rgba(0,0,0,.1)
+			}
+			.noMargin{
+				margin: 0;
+			}
+			.leftAlign {
+				text-align: left;
+			}
+
+			.inlineHeader {
+				display: inline-block;
+				margin: 0;
+			}
+
+			.contact, .objective, .projects, .experience, .education, .certification, .references {
+				padding: 1em;
+				/*width: 100%;*/
+			}
+			.contact .address, .contact .digits {
+				min-width: 400px;
+				width: 40%;
+			}
+			.objectiveList, .jobDescription {
+				font-size: .8em;
+			}
+
+			.job {
+				padding-bottom: 1em;
+			}
+
+			.certification, .education {
+				display: inline-block;
+				width: 40%;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contact">
+			<div class="address centerBox">
+				<h1 class="inlineHeader">John Shenk</h1>
+				<h3 class="inlineHeader">Eau Claire, WI</h3>
+			</div>
+			<div class="digits centerBox">
+				<div class="leftAlign">
+					<h3 class="inlineHeader"><span class="small">email: </span>john_shenk@hotmail.com</h3>
+					<h3 class="inlineHeader"><span class="small">phone: </span>815-519-7025</h3>
+					<h3 class="inlineHeader"><span class="small">github: </span>github.com/stinkyfingers</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="objective evens">
+			<div class="centerBox">
+				<div class="leftAlign">
+					<h3>Objective</h3>
+					<div>
+						I am seeking a Developer/Software Engineer position with a company that:
+						<ul class="objectiveList">
+							<li>Utilizes bleeding-edge technologies &amp; frameworks</li>
+							<li>Fosters continuous learning and R &amp; D</li>
+							<li>Has a clear vision</li>
+							<li>Has a contemporary and supportive company culture</li>
+							<li>Location: 
+								<ul><li>Minneapolis/St. Paul, MN</li><li>Eau Claire, WI</li><li>Offers remote employment</li></ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects">
+			<div class="centerBox">
+				<div class="leftAlign">
+					<h3>Project Samples</h3>
+
+					<div class="bubbleBox">
+						<h4 class="center">Curt Public API</h4>
+						<div class="center">for: Curt Mfg.</div>
+						<div class="left">www.api.curtmfg.com</div>
+						<div class="left">github.com/curt-labs/api</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>Golang</li>
+								<li>MySql, MongoDB, Redis</li>
+								<li>Kubernetes + Docker + Jenkins on Google Compute Engine</li>
+								<li>Google PubSub</li>
+								<li>Nginx</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bubbleBox">
+						<h4 class="center">Curt Internal API</h4>
+						<div class="center">for: Curt Mfg.</div>
+						<div class="left">www.iapi.curtmfg.com</div>
+						<div class="left">Private Repo</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>Golang</li>
+								<li>MySql, MongoDB, Redis, Elasticsearch</li>
+								<li>Kubernetes + Docker + Jenkins on Google Compute Engine</li>
+								<li>Nginx</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bubbleBox">
+						<h4 class="center">Dealer Portal</h4>
+						<div class="center">for: Curt Mfg.</div>
+						<div class="left">www.dealers.aries-auto.com</div>
+						<div class="left">github.com/aries-auto/dealers</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>AngularJS</li>
+								<li>Golang (server)</li>
+								<li>Gulp Taskrunner/Sass/Traceur</li>
+								<li>Google Appengine</li>
+								<li>Nginx</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bubbleBox">
+						<h4 class="center">Aries Automotive Site</h4>
+						<div class="center">for: Curt Mfg.</div>
+						<div class="left">www.ariesautomotive.com</div>
+						<div class="left">github.com/aries-auto/ariesautomotive</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>ReactJS</li>
+								<li>NodeJS (Isomorphic)</li>
+								<li>Webpack/Sass/Babel</li>
+								<li>Google Appengine</li>
+								<li>Nginx</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bubbleBox">
+						<h4 class="center">Dice-A-Roni</h4>
+						<div class="center">for: Personal</div>
+						<div class="left">www.wild-dice.herokuapp.com</div>
+						<div class="left">github.com/astinkyfingers/dice, github.com/stinkyfingers/diceApi</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>Golang</li>
+								<li>AngularJS</li>
+								<li>MongoDB</li>
+								<li>Heroku</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- <div class="bubbleBox">
+						<h4 class="center">Badlibs</h4>
+						<div class="center">Personal</div>
+						<div class="left">www.badlibsapp.herokuapp.com</div>
+						<div class="left">github.com/stinkyfingers/badlibs, github.com/stinkyfingers/badlibsApi</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>ReactJS</li>
+								<li>NodeJS (Isomorphic)</li>
+								<li>Gulp/Sass/Traceur</li>
+								<li>MongoDB</li>
+								<li>Heroku, Openshift</li>
+							</ul>
+						</div>
+					</div> -->
+
+					<div class="bubbleBox">
+						<h4 class="center">Curt Mfg Site</h4>
+						<div class="center">for: Curt Mfg</div>
+						<div class="left">www.curtmfg.com</div>
+						<div class="left">Private Repo</div>
+						<div class="left">Tech stack:
+							<ul class="noMargin">	
+								<li>C#</li>
+								<li>JQuery + HTML/CSS</li>
+								<li>Sql Server</li>
+								<li>IIS</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="experience evens">
+			<div class="centerBox">
+				<div class="leftAlign">
+					<h3>Experience</h3>
+					<div class="job">
+						<h4>Curt Mfg - Eau Claire, WI</h4>
+						<div>2014-present</div>
+						<div>Web Developer II - eCommerce</div>
+						<div class="jobDescription">
+							 I work as a full-stack web developer and am responsible for all stages of development and deployment of Curt (including Aries, Luverne, and Tess companies) web applications and APIs. A fraction of our projects are listed above.
+						</div>
+					</div>
+
+					<div class="job">
+						<h4>JB Systems, LLC - Eau Claire, WI</h4>
+						<div>Jan - June 2014</div>
+						<div>Web Developer Intern</div>
+						<div class="jobDescription">
+							 JB is a leading local web application and website developer. I was involved in all levels of development. I primarily used the following languages and frameworks: 
+							 <ul class="noMargin">
+							 	<li>PHP</li>
+							 	<li>JQuery</li>
+							 	<li>HTML/CSS</li>
+							 </ul>
+						</div>
+					</div>
+
+					<div class="job">
+						<h4>Inter-State Studio - Eau Claire, WI</h4>
+						<div>2006 - 2014</div>
+						<div>Territory Manager</div>
+					</div>
+
+					<div class="job">
+						<h4>Shenk Products, Inc. (d/b/a Big Donkey Pizza) - Eau Claire, WI</h4>
+						<div>2010 - 2014</div>
+						<div>Owner</div>
+					</div>
+
+					<div class="job">
+						<h4>Merck & Co. - Rockford, IL</h4>
+						<div>2004 - 2006</div>
+						<div>Medical Representative</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="education">
+			<div class="centerBox">
+				<div class="leftAlign">
+
+					<h3>Degrees</h3>
+					<div class="degrees">
+						<div class="job">
+							<h4>AS in IT/ Software Development</h4>
+							<div>2014</div>
+							<div>Chippewa Valley Technical College</div>
+						</div>
+					</div>
+
+					<div class="degrees">
+						<div class="job">
+							<h4>MBA</h4>
+							<div>2003</div>
+							<div>University Of Illinois at Chicago</div>
+						</div>
+					</div>
+
+					<div class="degrees">
+						<div class="job">
+							<h4>BS in Mass Communications</h4>
+							<div>2000</div>
+							<div>Illinois State University</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="certification">
+			<h3>Certificates</h3>
+			<div class="degrees">
+				<div class="job">
+					<h4>IT Database Analyst and Management</h4>
+					<div>2013</div>
+					<div>Chippewa Valley Technical College</div>
+				</div>
+			</div>
+
+			<div class="degrees">
+				<div class="job">
+					<h4>IT Mobile Application Development (Android)</h4>
+					<div>2013</div>
+					<div>Chippewa Valley Technical College</div>
+				</div>
+			</div>
+
+			<div class="degrees">
+				<div class="job">
+					<h4>IT .NET Programming</h4>
+					<div>2013</div>
+					<div>Chippewa Valley Technical College</div>
+				</div>
+			</div>
+
+			<div class="degrees">
+				<div class="job">
+					<h4>IT Java</h4>
+					<div>2014</div>
+					<div>Chippewa Valley Technical College</div>
+				</div>
+			</div>
+
+			<div class="degrees">
+				<div class="job">
+					<h4>IT Web Development 1 &amp; 2</h4>
+					<div>2014</div>
+					<div>Chippewa Valley Technical College</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="references evens">
+			<div class="centerBox">
+				<div class="leftAlign">
+					<h3>References</h3>
+					<div>PJ McGinley, eCommerce Bus. Manager, CUNA Mutual	Former Manager	715-456-4039</div>
+					<div>Broc Seigneurie, Developer, 			Curt Mfg	Coworker		715-820-1432</div>
+					<div>Alex Ninneman, Head of eCommerce Dev, 	Curt Mfg	Current Manager 	715-308-2604</div>
+					<div>Matt Mickelson, Developer,			TruSignal 	Former Coworker	715-450-6254</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

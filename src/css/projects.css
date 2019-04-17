@@ -1,0 +1,19 @@
+
+.projectsApp {
+	max-width: 400px;
+	margin: auto;
+}
+.projectList {
+	color: #444;
+}
+.repo {
+	font-style: oblique;
+	padding-bottom: 1em;
+}
+.summary {
+	font-weight: 600;
+}
+.project {
+	border-top: solid 1px #444;
+	padding-bottom: 1em;
+}

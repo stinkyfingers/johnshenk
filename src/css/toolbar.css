@@ -1,0 +1,23 @@
+.toolbar {
+	background: #111;
+	color: white;
+}
+button {
+	border: none;
+	margin: 0 .3em;
+	padding: .2em;
+	font-size: 2em;
+	background-color: #eee;
+	border-radius: 3px;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #ccc;
+}
+
+
+.myName, .occupation {
+  font-size:3em;
+  padding: .4em;
+}
