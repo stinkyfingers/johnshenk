@@ -229,9 +229,6 @@ class Resume extends Component {
                     <a href="https://medium.com/@johnshenk77/create-a-simple-chat-application-in-go-using-websocket-d2cb387db836" target="_blank">
                   Create a Chat Application in Go Using WebSocket</a>
                 </div>
-                <div>Timewaster: &nbsp;
-                  <a href="http://bullsandcows.john-shenk.com" target="_blank">Bulls and Cows</a>
-                </div>
             </div>
           </div>
         </div>

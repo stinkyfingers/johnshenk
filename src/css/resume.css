@@ -95,6 +95,12 @@ h4, h5, h6 {
 .ital {
 	font-style: oblique;
 }
+a:link, a:visited {
+    color: #aaa;
+}
+a:hover {
+	color: #000;
+}
 
 @media (max-width: 1024px) {
 	.objectiveList, .expertise {
