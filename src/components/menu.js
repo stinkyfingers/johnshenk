@@ -14,7 +14,7 @@ export default function Menu() {
     let links = [<li key='close' id='close' onClick={closeFn}>X</li>];
     sites.forEach((site) => {
       links.push(<li key={site.name}>
-        <a href={site.url} target='blank'>{site.name}</a>
+        <a href={site.url} target='blank' rel="noopener noreferrer">{site.name}</a>
       </li>);
     });
     return(<ul className='menuList'>{links}</ul>)

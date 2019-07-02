@@ -13,8 +13,8 @@ class Resume extends Component {
           <div className="digits centerBox">
               <h3 className="inlineHeader"><span className="small">email: </span>john_shenk@hotmail.com</h3>
               <h3 className="inlineHeader"><span className="small">phone: </span>815-519-7025</h3>
-              <h3 className="inlineHeader"><span className="small">github: </span>github.com/stinkyfingers <a href="https://github.com/stinkyfingers" target="_blank">[go]</a></h3>
-              <h3 className="inlineHeader"><span className="small">bitbucket: </span>bitbucket.com/stinkyfingers<a href="https://bitbucket.com/stinkyfingers" target="_blank">[go]</a></h3>
+              <h3 className="inlineHeader"><span className="small">github: </span>github.com/stinkyfingers <a href="https://github.com/stinkyfingers" target="_blank" rel="noopener noreferrer">[go]</a></h3>
+              <h3 className="inlineHeader"><span className="small">bitbucket: </span>bitbucket.com/stinkyfingers<a href="https://bitbucket.com/stinkyfingers" target="_blank" rel="noopener noreferrer">[go]</a></h3>
           </div>
         </div>
 
@@ -222,11 +222,11 @@ class Resume extends Component {
             <div className="leftAlign">
               <h3>Etc.</h3>
                 <div>Publication: &nbsp;
-                    <a href="https://medium.com/@johnshenk77/use-go-grpc-to-create-a-platform-that-implements-modules-in-other-languages-430949e22a1d" target="_blank">
+                    <a href="https://medium.com/@johnshenk77/use-go-grpc-to-create-a-platform-that-implements-modules-in-other-languages-430949e22a1d" target="_blank" rel="noopener noreferrer">
                   Use Go and gRPC to Create a Modular Platform</a>
                 </div>
                 <div>Publication: &nbsp;
-                    <a href="https://medium.com/@johnshenk77/create-a-simple-chat-application-in-go-using-websocket-d2cb387db836" target="_blank">
+                    <a href="https://medium.com/@johnshenk77/create-a-simple-chat-application-in-go-using-websocket-d2cb387db836" target="_blank" rel="noopener noreferrer">
                   Create a Chat Application in Go Using WebSocket</a>
                 </div>
             </div>
