@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../css/menu.css';
 
 const sites = [
-  {name: 'Badlibs', url: 'http://badlibs.john-shenk.com'},
-  {name: 'Scribblefest', url: 'http://scribblefest.john-shenk.com'},
-  {name: 'Bulls & Cows', url: 'http://bullsandcows.john-shenk.com'}
+  {name: 'Badlibs', url: `${window.location.protocol}//badlibs.john-shenk.com`},
+  {name: 'Scribblefest', url: `${window.location.protocol}//scribblefest.john-shenk.com`},
+  {name: 'Bulls & Cows', url: `${window.location.protocol}//bullsandcows.john-shenk.com`}
 ]
 
 export default function Menu() {
