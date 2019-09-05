@@ -31,6 +31,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       origin_protocol_policy = "http-only"
       origin_ssl_protocols = ["SSLv3", "TLSv1", "TLSv1.1", "TLSv1.2"]
     }
+    custom_header = {
+      name = "Referer"
+      value = "iWantYourResume"
+    }
   }
 
   enabled             = true

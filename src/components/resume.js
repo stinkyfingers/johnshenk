@@ -207,12 +207,12 @@ class Resume extends Component {
           <div className="centerBox">
             <div className="leftAlign">
               <h3>Professional References</h3>
-              <div>Doug Valente, COO, EvengX 425-614-9970</div>
-              <div>Martín Quiroga, Product Manager, Lending Club (former manager - EvengX)   415-307-6434</div>
+              <div>Doug Valente, VP, Tideworks (fomerly COO, EvengX) 425-614-9970</div>
+              <div>Martín Quiroga, Product Manager, Lending Club (formerly Development Manager, EvengX)   415-307-6434</div>
               <div>Rebecca June, Project Manager, Evengx 425-610-6143</div>
-              <div>PJ McGinley, eCommerce Bus. Manager, CUNA Mutual (Former Software Team Manager)  715-456-4039</div>
-              <div>Broc Seigneurie, Developer,      CVTC  (former Coworker)    715-820-1432</div>
-              <div>Alex Ninneman, eCommerce Dev,  PowerChord (former Dev Manager)  Current Manager   715-308-2604</div>
+              <div>PJ McGinley, eCommerce Bus. Manager, CUNA Mutual (formerly eCommerce Manager, Curt)  715-456-4039</div>
+              <div>Broc Seigneurie, Developer, CVTC  (former Coworker)    715-820-1432</div>
+              <div>Alex Ninneman, eCommerce Dev,  PowerChord (formerly Development Manager, Curt)  715-308-2604</div>
             </div>
           </div>
         </div>
