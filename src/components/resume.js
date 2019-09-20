@@ -207,6 +207,7 @@ class Resume extends Component {
           <div className="centerBox">
             <div className="leftAlign">
               <h3>Professional References</h3>
+              <div>Matt George, Product Manager, Amazon Web Services (formerly Development Manager, Rackspace)  615-519-4950</div>
               <div>Doug Valente, VP, Tideworks (fomerly COO, EvengX) 425-614-9970</div>
               <div>Martín Quiroga, Product Manager, Lending Club (formerly Development Manager, EvengX)   415-307-6434</div>
               <div>Rebecca June, Project Manager, Evengx 425-610-6143</div>
