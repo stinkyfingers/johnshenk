@@ -19,7 +19,7 @@ const Resume = () => (
           <div>
             <ul className="objectiveList">
               <li>6 years of professional full-stack software development experience.</li>
-              <li>Expertise architecting platforms for distributed, cloud-based, and serverless systems.</li>
+              <li>Expertise architecting applications on distributed, cloud-based, serverless systems.</li>
               <li>Proficiency across multiple cloud infrastructures (IaaS), languages, and tools.</li>
               <li>Experience developing algorithms for complex data analysis at packet level.</li>
               <li>Proven track record of leadership.</li>
@@ -33,7 +33,7 @@ const Resume = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | NodeJS | Javascript/ReactJS/AngularJS/JQuery | Python | MySql/Aurora | MongoDB | Redis | Elasticsearch | AWS | DynamoDB | Lanbda | Google Cloud Platform | Docker | Jenkins | Git | Buildbot | HTML/CSS | Linux | Windows | RESTful APIs | Project Planning | Agile
+          Go (Golang) | Javascript/ReactJS/AngularJS/JQuery/NodeJS | Python | MySql/Aurora | MongoDB | Redis | Elasticsearch | AWS | GCP | Docker | Git | HTML/CSS | Linux | Windows | RESTful APIs | CLIs | Project Planning | Agile
         </div>
       </div>
     </div>
@@ -48,9 +48,10 @@ const Resume = () => (
             <div>2018-Present</div>
             <div>Software Engineer III</div>
             <ul className="jobDescription">
-              <li>Built CLI, APIs, UIs, and infrastructure to provide users with secure, monitored access to AWS resources.</li>
-              <li>Focused on primarily serverless architecture.</li>
-              <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, Bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch, Terraform, Docker, Jenkins.</li>
+              <li>I build CLIs, APIs, UIs, and infrastructure to provide users with secure, monitored access to AWS resource, primarily via serverless architecture.</li>
+              <li>PCI Compliance.</li>
+              <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch/ECS/EC2/SSM.</li>
+              <li>Infrastructure & CI/CD: AWS/ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
             </ul>
           </div>
 
@@ -63,7 +64,7 @@ const Resume = () => (
               <li>Implemented 3rd party software into our platform including: Suricata, OSquery, Iptables, Windivert.</li>
               <li>Developed PaaS product modules which: quarantined infected machines, detected/blocked network attacks, detected malicious files, communicate w/ trusted endpoints, update status.</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Docker, Javascript/ReactJS/NodeJS, Bash scripting, C++.</li>
-              <li>Deployment tech:  AWS/ECS/ECR/Aurora, Docker, Git, Buildbot, Linux/RHEL/Debian/Windows.</li>
+              <li>Infrastructure & CI/CD: AWS/ECS/ECR/Aurora, Docker, Git, Buildbot, Linux/RHEL/Debian/Windows.</li>
             </ul>
           </div>
 
@@ -75,21 +76,20 @@ const Resume = () => (
               <li>Developed pattern-extracting algorithm for isolating key portions of network packets in detecting the "DNA" of network attacks, implementing the company's patents.</li>
               <li>Developed testing framework and user interface for running our product against malicious & non-malicious network traffic and storing/retrieving results.</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Javascript/ReactJS/NodeJS.</li>
-              <li>Deployment tech:  AWS/ECS/ECR/ElasticBeanstalk, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
+              <li>Infrastructure & CI/CD: AWS/ECS/ECR/ElasticBeanstalk, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
             </ul>
           </div>
 
           <div className="job">
-            <h4>Curt Mfg - Eau Claire, WI</h4>
+            <h4>Curt Group, LLC - Eau Claire, WI</h4>
             <div>2014-2016</div>
             <div>Web Developer II - eCommerce</div>
             <ul className="jobDescription">
               <li>Developed public API consumed by thousands of retailers, serving millions of requests. </li>
               <li>Implemented "Envision", a 3rd-party app that enabled users to visualize our products on their own vehicles.</li>
               <li>Engineered isomorphic apps to allow indexing by search engines while engaging users with speed and interactiveness.</li>
-              <li>Tech: Go(Golang), Javascript/NodeJS/ReactJS/Angular/JQuery, C#, MySql, MongoDB, Redis.</li>
-              <li>JS tech stack: NPM, Babel, Traceur Webpack, Gulp, Grunt, GoogleAPIs.</li>
-              <li>Deployment tech: Google Cloud/Compute Engine/App Engine/Kubernetes/PubSub, Docker, Git, Jenkins, Drone.io, Nginx.</li>
+              <li>Tech: Go(Golang), Javascript/NodeJS/ReactJS/Angular/JQuery, C#, MySql, MongoDB, Redis, Elasticsearch.</li>
+              <li>c Google Cloud/Compute Engine/App Engine/Kubernetes, Docker, Git, Jenkins, Drone.io, Nginx.</li>
             </ul>
           </div>
 
