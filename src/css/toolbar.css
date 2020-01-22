@@ -1,6 +1,5 @@
 .toolbar {
 	background: #000;
-
 	color: white;
 	position: fixed;
 	width: 100%;
@@ -24,6 +23,12 @@ button:hover{
 
 
 .myName, .occupation {
-  font-size:3em;
+  font-size: 3em;
   padding: .4em;
+}
+
+@media (max-width: 1024px) {
+	.myName	{
+		font-size: 1.2em;
+	}
 }
