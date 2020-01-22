@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import projects from '../projects';
 import '../css/projects.css';
 
-class Projects extends Component {
+const Projets = () => {
 
-	renderProjects() {
+	const renderProjects = () => {
 		let p = [];
 		for (const i in projects) {
 			if (!projects[i]) {
@@ -19,14 +19,12 @@ class Projects extends Component {
 		return (<div className="projectList">{p}</div>);
 	}
 
-	  render() {
-	    return (
-	      <div className="projectsApp">
-	      <h1>Projects</h1>
-	      	{this.renderProjects()}
-	      </div>
-	    );
-	  }
+  return (
+    <div className="projectsApp">
+    <h1>Projects</h1>
+    	{this.renderProjects()}
+    </div>
+  );
 }
 
 export default Projects;
