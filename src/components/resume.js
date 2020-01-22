@@ -4,7 +4,7 @@ import '../css/resume.css';
 const Resume = () => (
   <div className="resume">
 
-    <div className="contact">
+    <div className="contact textblock">
       <div className="digits centerBox">
           <h3 className="inlineHeader"><span className="small">email: </span>john_shenk@hotmail.com</h3>
           <h3 className="inlineHeader"><span className="small">phone: </span>815-519-7025</h3>
@@ -13,7 +13,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="objective evens">
+    <div className='empty' />
+
+    <div className="objective textblock">
       <div className="centerBox">
         <div className="leftAlign">
           <div>
@@ -29,7 +31,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="expertise odds">
+    <div className='empty' />
+
+    <div className="objective textblock">
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
@@ -38,7 +42,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="experience evens">
+    <div className='empty' />
+
+    <div className="experience textblock">
       <div className="centerBox">
         <div className="leftAlign">
           <h3>Experience</h3>
@@ -121,7 +127,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="education">
+    <div className='empty' />
+
+    <div className="education textblock">
       <div className="centerBox">
         <div className="leftAlign">
 
@@ -153,7 +161,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="certification">
+    <div className='empty' />
+
+    <div className="certification textblock">
       <div className="leftAlign">
         <h3>Certificates</h3>
         <div className="degrees">
@@ -198,7 +208,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="references evens">
+    <div className='empty' />
+
+    <div className="references textblock">
       <div className="centerBox">
         <div className="leftAlign">
           <h3>Professional References</h3>
@@ -213,7 +225,9 @@ const Resume = () => (
       </div>
     </div>
 
-    <div className="goodies odds">
+    <div className='empty' />
+
+    <div className="goodies textblock">
       <div className="centerBox">
         <div className="leftAlign">
           <h3>Etc.</h3>

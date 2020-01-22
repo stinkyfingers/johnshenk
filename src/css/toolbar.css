@@ -1,7 +1,13 @@
 .toolbar {
-	background: #111;
+	background: #000;
+
 	color: white;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 70px;
 }
+
 button {
 	border: none;
 	margin: 0 .3em;

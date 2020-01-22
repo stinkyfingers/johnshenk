@@ -8,6 +8,20 @@ body {
 h4, h5, h6 {
 	margin: .1em;
 }
+
+.resume {
+	background-image: url("../Photos/IMG_0981.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	margin: 70px auto 0;
+}
+
+.empty {
+	height: 12em;
+}
+
 .small {
 	font-size: .6em;
 }
@@ -32,9 +46,11 @@ h4, h5, h6 {
 .centerBox {
 	vertical-align: top;
 }
-.evens {
-	background-color: rgba(0,0,0,.1)
+.textblock {
+	background-color: rgba(0,0,0,.8);
+	color: #eee;
 }
+
 .noMargin{
 	margin: 0;
 }
@@ -61,16 +77,12 @@ h4, h5, h6 {
 	text-align: left;
 }
 
-.contact, .objective, .projects, .experience, .education, .certification, .references, .tech, .expertise, .goodies {
+.contact, .objective, .projects, .experience, .education, .certification, .references, .tech, .goodies {
 	padding: 1em;
 }
 
 .jobDescription {
 	font-size: .8em;
-}
-.objectiveList, .expertise{
-	margin: auto;
-	width: 50%;
 }
 
 .job {
@@ -103,7 +115,7 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-	.objectiveList, .expertise {
+	.objectiveList {
 		width: 90%;
 	}
 }
