@@ -119,4 +119,9 @@ a:hover {
 	.objectiveList {
 		width: 90%;
 	}
+	.resume {
+		margin: 70px auto 0;
+		background-color: #000;
+		background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
+	}
 }
