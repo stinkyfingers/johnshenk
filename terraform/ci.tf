@@ -56,6 +56,15 @@ resource "aws_iam_role_policy" "johnshenk_build" {
         "${aws_s3_bucket.john-shenk.arn}",
         "${aws_s3_bucket.john-shenk.arn}/*"
       ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateInvalidation"
+      ],
+      "Resource": [
+        "${aws_cloudfront_distribution.s3_distribution.arn}"
+      ]
     }
   ]
 }
