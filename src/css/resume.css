@@ -9,14 +9,14 @@ h4, h5, h6 {
 	margin: .1em;
 }
 
-/* .resume {
+.resume {
 	margin: 70px auto 0;
-	background: url(../Photos/IMG_0981.jpg) no-repeat center center fixed;
+	background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
 
 .empty {
 	height: 12em;
@@ -117,5 +117,9 @@ a:hover {
 @media (max-width: 1024px) {
 	.objectiveList {
 		width: 90%;
+	}
+	.resume {
+		margin: 70px auto 0;
+		background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
 	}
 }
