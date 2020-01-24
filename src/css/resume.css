@@ -11,18 +11,14 @@ h4, h5, h6 {
 
 .resume {
 	margin: 70px auto 0;
-	/* background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
-	background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
 }
 
 .backgroundImage {
 	position: fixed;
 	z-index: -1;
 	width: 100%;
+	background-color: #000;
+	height: 100%;
 }
 .backgroundImage>img {
 	width: 100%;
