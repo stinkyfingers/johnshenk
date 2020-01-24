@@ -14,7 +14,7 @@ phases:
     commands:
       - aws s3 sync build s3://john-shenk.com
       - aws s3 sync build s3://resume.john-shenk.com
-      - aws cloudfront create-invalidation --paths /index.html --distribution-id E1SJY8QMCJ82VC
+      - aws cloudfront create-invalidation --paths /index.html --distribution-id E1SJY8QMCJ82VC --profile jds
 artifacts:
   files:
     - 'build/*'
