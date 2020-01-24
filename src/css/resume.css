@@ -12,6 +12,7 @@ h4, h5, h6 {
 .resume {
 	margin: 70px auto 0;
 	background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
+	background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -117,9 +118,5 @@ a:hover {
 @media (max-width: 1024px) {
 	.objectiveList {
 		width: 90%;
-	}
-	.resume {
-		margin: 70px auto 0;
-		background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
 	}
 }
