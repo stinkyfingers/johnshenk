@@ -4,15 +4,12 @@ body {
 	font-size: .8em;
 	margin: 0;
 }
-
 h4, h5, h6 {
 	margin: .1em;
 }
-
 .resume {
 	margin: 70px auto 0;
 }
-
 .backgroundImage {
 	position: fixed;
 	z-index: -1;
@@ -23,15 +20,12 @@ h4, h5, h6 {
 .backgroundImage>img {
 	width: 100%;
 }
-
 .empty {
 	height: 12em;
 }
-
 .small {
 	font-size: .6em;
 }
-
 .bubbleBox {
 	display: inline-block;
 	vertical-align: top;
@@ -56,18 +50,15 @@ h4, h5, h6 {
 	background-color: rgba(0,0,0,.8);
 	color: #eee;
 }
-
 .noMargin{
 	margin: 0;
 }
 .leftAlign {
 	text-align: left;
 }
-
 .inlineHeader {
 	margin: 0;
 }
-
 .contact {
 	border-top: 3px solid black;
 }
@@ -82,28 +73,25 @@ h4, h5, h6 {
 	width: 30em;
 	text-align: left;
 }
-
-.contact, .objective, .projects, .experience, .education, .certification, .references, .tech, .goodies {
+/* .contact, .objective, .projects, .experience, .education, .certification, .references, .tech, .goodies {
+	width:100%;
+ 	padding: 10em;
+} */
+.textblock {
+	width: 100%;
+}
+.textblock>div{
 	padding: 1em;
 }
-
 .jobDescription {
 	font-size: .8em;
 }
-
 .job {
 	padding-bottom: 1em;
 }
 .job>div{
 	margin-left: 2em;
 }
-
-.certification, .education {
-	display: inline-block;
-	width: 40%;
-	vertical-align: top;
-}
-
 .techList {
 	list-style-type: none;
 }
@@ -124,9 +112,4 @@ a:hover {
 	.objectiveList {
 		width: 90%;
 	}
-	/* .resume {
-		margin: 70px auto 0;
-		background-color: #000;
-		background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
-	} */
 }
