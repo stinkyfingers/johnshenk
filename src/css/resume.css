@@ -10,12 +10,12 @@ h4, h5, h6 {
 }
 
 .resume {
-	background-image: url("../Photos/IMG_0981.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center top;
-	background-size: cover;
 	margin: 70px auto 0;
+	background: url(../Photos/IMG_0981.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .empty {
