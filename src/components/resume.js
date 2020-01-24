@@ -3,6 +3,9 @@ import '../css/resume.css';
 
 const Resume = () => (
   <div className="resume">
+    <div className="backgroundImage">
+      <img src={require("../Photos/IMG_0981.jpg")} alt="Me with sunglasses."/>
+    </div>
 
     <div className="contact textblock">
       <div className="digits centerBox">

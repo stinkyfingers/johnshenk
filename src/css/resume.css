@@ -11,12 +11,21 @@ h4, h5, h6 {
 
 .resume {
 	margin: 70px auto 0;
-	background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
+	/* background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
 	background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+}
+
+.backgroundImage {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+}
+.backgroundImage>img {
+	width: 100%;
 }
 
 .empty {
@@ -119,9 +128,9 @@ a:hover {
 	.objectiveList {
 		width: 90%;
 	}
-	.resume {
+	/* .resume {
 		margin: 70px auto 0;
 		background-color: #000;
 		background: url(../Photos/IMG_0981.jpg) no-repeat top center fixed;
-	}
+	} */
 }
