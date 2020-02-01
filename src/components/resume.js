@@ -24,9 +24,9 @@ const Resume = () => (
           <div>
             <ul className="objectiveList">
               <li>6 years of professional full-stack software development experience.</li>
-              <li>Expertise architecting applications on distributed, cloud-based, serverless systems.</li>
+              <li>Expertise architecting applications for distributed, cloud-based, and serverless environments.</li>
               <li>Proficiency across multiple cloud infrastructures (IaaS), languages, and tools.</li>
-              <li>Experience developing algorithms for complex data analysis at packet level.</li>
+              <li>Experience developing algorithms for complex data analysis.</li>
               <li>Proven track record of leadership.</li>
             </ul>
           </div>
@@ -57,8 +57,12 @@ const Resume = () => (
             <div>2018-Present</div>
             <div>Software Engineer III</div>
             <ul className="jobDescription">
-              <li>I build CLIs, APIs, UIs, and infrastructure to provide users with secure, monitored access to AWS resource, primarily via serverless architecture.</li>
+              <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
+              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials on AWS resources and provide resource state.</li>
+              <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
+              <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
               <li>PCI Compliance.</li>
+              <li>Hosted regular brown bag sessions demonstrating and explaining our tech.</li>
               <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch/ECS/EC2/SSM.</li>
               <li>Infrastructure & CI/CD: AWS/ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
             </ul>
