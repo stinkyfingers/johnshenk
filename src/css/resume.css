@@ -10,6 +10,7 @@ h4, h5, h6 {
 .resume {
 	margin: 70px auto 0;
 	width: 100%;
+	overflow: hidden;
 }
 .backgroundImage {
 	position: fixed;
