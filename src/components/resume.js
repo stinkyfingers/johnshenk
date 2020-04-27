@@ -75,7 +75,7 @@ const Resume = () => (
             <ul className="jobDescription">
               <li>Lead a team in architecting a modular, extensible security/compliance platform that resides on distributed nodes on a network.</li>
               <li>Implemented 3rd party software into our platform including: Suricata, OSquery, Iptables, Windivert.</li>
-              <li>Developed PaaS product modules which: quarantined infected machines, detected/blocked network attacks, detected malicious files, communicate w/ trusted endpoints, update status.</li>
+              <li>Developed PaaS product modules which: quarantined infected machines, detected/blocked network attacks, detected malicious files, communicated w/ trusted endpoints, updated status.</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Docker, Javascript/ReactJS/NodeJS, Bash scripting, C++.</li>
               <li>Infrastructure & CI/CD: AWS/ECS/ECR/Aurora, Docker, Git, Buildbot, Linux/RHEL/Debian/Windows.</li>
             </ul>
@@ -86,8 +86,9 @@ const Resume = () => (
             <div>2016-2017</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Developed pattern-extracting algorithm for isolating key portions of network packets in detecting the "DNA" of network attacks, implementing the company's patents.</li>
-              <li>Developed testing framework and user interface for running our product against malicious & non-malicious network traffic and storing/retrieving results.</li>
+              <li>Developed pattern-matching/pattern-extractivng algorithms for identifying nth-degree Longest Common Substrings (LCS) using Directional Acyclic Graphs (DAG).</li>
+              <li>Developed applications for isolating and learning key portions of network packets (the "DNA" of network attacks), implementing the company's patents.</li>
+              <li>Developed testing framework and user interface for running our product against malicious & non-malicious network traffic and storing/retrieving results & Packet Captures (PCAPs).</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Javascript/ReactJS/NodeJS.</li>
               <li>Infrastructure & CI/CD: AWS/ECS/ECR/ElasticBeanstalk, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
             </ul>
