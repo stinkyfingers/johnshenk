@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import '../css/menu.css';
 
 const sites = [
   {name: 'Badlibs', url: `${window.location.protocol}//badlibs.john-shenk.com`},
   {name: 'Scribblefest', url: `${window.location.protocol}//scribblefest.john-shenk.com`},
-  {name: 'Bulls & Cows', url: `${window.location.protocol}//bullsandcows.john-shenk.com`}
-]
+  {name: 'Bulls & Cows', url: `${window.location.protocol}//bullsandcows.john-shenk.com`},
+  {name: 'Difference Between', url: `${window.location.protocol}//differencebetween.john-shenk.com`}
+];
 
-export default function Menu() {
+const Menu = () => {
   const [show, setShow] = useState(false);
 
-  function renderMenuList(closeFn) {
-    let links = [<li key='close' id='close' onClick={closeFn}>X</li>];
+  const renderMenuList = (closeFn) => {
+    const links = [<FontAwesomeIcon key='close' icon={faWindowClose} onClick={closeFn} />];
+
     sites.forEach((site) => {
       links.push(<li key={site.name}>
-        <a href={site.url} target='blank' rel="noopener noreferrer">{site.name}</a>
+        <a href={site.url} target='blank' rel='noopener noreferrer'>{site.name}</a>
       </li>);
     });
     return(<ul className='menuList'>{links}</ul>)
@@ -23,8 +27,10 @@ export default function Menu() {
   return (
     <div className='menu'>
       {show ?
-        <div><div>{renderMenuList(() => setShow(!show))}</div></div>
-        :<div onClick={() => setShow(!show)}>MENU</div>}
+        <div>{renderMenuList(() => setShow(!show))}</div>
+        :<div className='menuButton' onClick={() => setShow(!show)}>MENU</div>}
     </div>
   );
-}
+};
+
+export default Menu;
