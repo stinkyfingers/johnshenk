@@ -24,9 +24,9 @@ const Resume = () => (
           <div>
             <ul className="objectiveList">
               <li>6 years of professional full-stack software development experience.</li>
-              <li>Expertise architecting applications for distributed, cloud-based, and serverless environments.</li>
+              <li>Expertise architecting applications for distributed, cloud-based, serverless environments.</li>
               <li>Proficiency across multiple cloud infrastructures (IaaS), languages, and tools.</li>
-              <li>Experience developing algorithms for complex data analysis.</li>
+              <li>Experience developing applications, packages, and algorithms for complex data analysis.</li>
               <li>Proven track record of leadership.</li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Resume = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | Javascript/ReactJS/AngularJS/JQuery/NodeJS | Python | MySql/Aurora | MongoDB | Redis | Elasticsearch | AWS | GCP | Docker | Git | HTML/CSS | Linux | Windows | RESTful APIs | CLIs | Project Planning | Agile
+          Go (Golang) | Javascript | ReactJS | NodeJS | Python | MySql/Aurora | MongoDB | AWS  | Docker | Git | HTML/CSS | Linux | Windows | RESTful APIs | CLIs | Project Planning | Agile
         </div>
       </div>
     </div>
@@ -58,13 +58,13 @@ const Resume = () => (
             <div>Software Engineer III</div>
             <ul className="jobDescription">
               <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
-              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials on AWS resources and provide resource state.</li>
+              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
               <li>PCI Compliance.</li>
               <li>Hosted regular brown bag sessions demonstrating and explaining our tech.</li>
-              <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch/ECS/EC2/SSM.</li>
-              <li>Infrastructure & CI/CD: AWS/ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
+              <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch/EC2/SSM/S3.</li>
+              <li>Infrastructure & CI/CD: AWS ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows, CircleCI, Nginx.</li>
             </ul>
           </div>
 
@@ -77,7 +77,7 @@ const Resume = () => (
               <li>Implemented 3rd party software into our platform including: Suricata, OSquery, Iptables, Windivert.</li>
               <li>Developed PaaS product modules which: quarantined infected machines, detected/blocked network attacks, detected malicious files, communicated w/ trusted endpoints, updated status.</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Docker, Javascript/ReactJS/NodeJS, Bash scripting, C++.</li>
-              <li>Infrastructure & CI/CD: AWS/ECS/ECR/Aurora, Docker, Git, Buildbot, Linux/RHEL/Debian/Windows.</li>
+              <li>Infrastructure & CI/CD: AWS ECS/ECR/Aurora, Docker, Git, Buildbot, Linux/RHEL/Debian/Windows.</li>
             </ul>
           </div>
 
@@ -86,11 +86,11 @@ const Resume = () => (
             <div>2016-2017</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Developed pattern-matching/pattern-extractivng algorithms for identifying nth-degree Longest Common Substrings (LCS) using Directional Acyclic Graphs (DAG).</li>
+              <li>Developed pattern-matching & pattern-extractivng algorithms for identifying nth-degree Longest Common Substrings (LCS) using Directional Acyclic Graphs (DAG).</li>
               <li>Developed applications for isolating and learning key portions of network packets (the "DNA" of network attacks), implementing the company's patents.</li>
               <li>Developed testing framework and user interface for running our product against malicious & non-malicious network traffic and storing/retrieving results & Packet Captures (PCAPs).</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Javascript/ReactJS/NodeJS.</li>
-              <li>Infrastructure & CI/CD: AWS/ECS/ECR/ElasticBeanstalk, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
+              <li>Infrastructure & CI/CD: AWS ECS/ECR/ElasticBeanstalk, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows.</li>
             </ul>
           </div>
 
@@ -102,8 +102,8 @@ const Resume = () => (
               <li>Developed public API consumed by thousands of retailers, serving millions of requests. </li>
               <li>Implemented "Envision", a 3rd-party app that enabled users to visualize our products on their own vehicles.</li>
               <li>Engineered isomorphic apps to allow indexing by search engines while engaging users with speed and interactiveness.</li>
-              <li>Tech: Go(Golang), Javascript/NodeJS/ReactJS/Angular/JQuery, C#, MySql, MongoDB, Redis, Elasticsearch.</li>
-              <li>c Google Cloud/Compute Engine/App Engine/Kubernetes, Docker, Git, Jenkins, Drone.io, Nginx.</li>
+              <li>Tech: Go(Golang), Javascript/NodeJS/ReactJS/AngularJS/JQuery, C#, MySql, MongoDB, Redis, Elasticsearch.</li>
+              <li>Infrastructure & CI/CD: Google Cloud (GCP), Compute Engine, App Engine, Kubernetes, Docker, Git, Jenkins, Drone.io, Nginx.</li>
             </ul>
           </div>
 
