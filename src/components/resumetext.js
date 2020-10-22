@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../css/resume.css';
 
 const ResumeText = () => (
   <div className="resume">
@@ -56,6 +55,7 @@ const ResumeText = () => (
               <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
               <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
+              <li>Built web application to facilitate patching cloud resources.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
               <li>PCI Compliance.</li>
               <li>Hosted regular brown bag sessions demonstrating and explaining our tech.</li>
@@ -82,7 +82,7 @@ const ResumeText = () => (
             <div>2016-2017</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Developed pattern-matching & pattern-extractivng algorithms for identifying nth-degree Longest Common Substrings (LCS) using Directional Acyclic Graphs (DAG).</li>
+              <li>Developed pattern-matching & pattern-extracting algorithms for identifying nth-degree Longest Common Substrings (LCS) using Directional Acyclic Graphs (DAG).</li>
               <li>Developed applications for isolating and learning key portions of network packets (the "DNA" of network attacks), implementing the company's patents.</li>
               <li>Developed testing framework and user interface for running our product against malicious & non-malicious network traffic and storing/retrieving results & Packet Captures (PCAPs).</li>
               <li>Tech: Go(Golang), Python, MySql, MongoDB, Javascript/ReactJS/NodeJS.</li>
@@ -95,9 +95,10 @@ const ResumeText = () => (
             <div>2014-2016</div>
             <div>Web Developer II - eCommerce</div>
             <ul className="jobDescription">
-              <li>Developed public API consumed by thousands of retailers, serving millions of requests. </li>
+              <li>Developed public API for vehicle part fitment consumed by thousands of retailers, serving millions of requests. </li>
+              <li>Build multiple consumer-facing company websites.</li>
               <li>Implemented "Envision", a 3rd-party app that enabled users to visualize our products on their own vehicles.</li>
-              <li>Engineered isomorphic apps to allow indexing by search engines while engaging users with speed and interactiveness.</li>
+              <li>Engineered isomorphic apps to allow indexing by search engines for SEO benefits.</li>
               <li>Tech: Go(Golang), Javascript/NodeJS/ReactJS/AngularJS/JQuery, C#, MySql, MongoDB, Redis, Elasticsearch.</li>
               <li>Infrastructure & CI/CD: Google Cloud (GCP), Compute Engine, App Engine, Kubernetes, Docker, Git, Jenkins, Drone.io, Nginx.</li>
             </ul>
