@@ -52,8 +52,8 @@ const ResumeText = () => (
             <div>2018-Present</div>
             <div>Software Engineer III</div>
             <ul className="jobDescription">
-              <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
-              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
+              <li>Built CLI to provide individuals ephemeral, monitored access to AWS EC2 resources.</li>
+              <li>Built largely serverless APIs + backend to manage user credentials on cloud resources using proprietary workflow.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
               <li>Built web application to facilitate patching cloud resources.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
