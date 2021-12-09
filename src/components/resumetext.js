@@ -18,11 +18,12 @@ const ResumeText = () => (
         <div className="leftAlign">
           <div>
             <ul className="objectiveList">
-              <li>6 years of professional full-stack software development experience.</li>
-              <li>Expertise architecting applications for distributed, cloud-based, serverless environments.</li>
-              <li>Proficiency across multiple cloud infrastructures (IaaS), languages, and tools.</li>
-              <li>Experience developing applications, packages, and algorithms for complex data analysis.</li>
-              <li>Proven track record of leadership.</li>
+              <li>7 years of professional full-stack software development experience.</li>
+              <li>Career of architecting applications for distributed, cloud-based, serverless environments.</li>
+              <li>Proficiency with multiple cloud infrastructures, platforms, languages, and tools (IaaS/PaaS).</li>
+              <li>Experience developing applications, packages, and algorithms to digest complex data.</li>
+              <li>Leadership experience.</li>
+
             </ul>
           </div>
         </div>
@@ -35,7 +36,7 @@ const ResumeText = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | Javascript | ReactJS | NodeJS | Python | MySql/Aurora | MongoDB | AWS  | Docker | Git | HTML/CSS | Linux | Windows | RESTful APIs | CLIs | Project Planning | Agile
+          Go (Golang) | Javascript | ReactJS | NodeJS | MySql/MongoDB/NoSql | AWS | Docker | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning | Agile | Kubernetes
         </div>
       </div>
     </div>
@@ -48,19 +49,32 @@ const ResumeText = () => (
           <h3>Experience</h3>
 
           <div className="job">
+            <h4>Shipa.io - Remote</h4>
+            <div>2021-current</div>
+            <div>Software Engineer</div>
+            <ul className="jobDescription">
+              <li>Build Kubernetes Operators & CRDs designed to make application deployments easier for teams and permit managers to enforce deployment policies.</li>
+              <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, managing CNAMEs, Framework yaml management.</li>
+              <li>Terraform providers.</li>
+              <li>Tech: Go(Golang), Kubernetes, Kubebuilder, bash scripting.</li>
+              <li>Infrastructure & CI/CD: Github Actions, TravisCI, Dockerhub, AWS/GCP.</li>
+            </ul>
+          </div>
+
+          <div className="job">
             <h4>Rackspace - Remote</h4>
-            <div>2018-Present</div>
+            <div>2018-2021</div>
             <div>Software Engineer III</div>
             <ul className="jobDescription">
-              <li>Built CLI to provide individuals ephemeral, monitored access to AWS EC2 resources.</li>
-              <li>Built largely serverless APIs + backend to manage user credentials on cloud resources using proprietary workflow.</li>
+              <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
+              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
-              <li>Built web application to facilitate patching cloud resources.</li>
+              <li>Built web application & API  to facilitate patching and schedule maintenance windows  of cloud resource pools.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
               <li>PCI Compliance.</li>
               <li>Hosted regular brown bag sessions demonstrating and explaining our tech.</li>
               <li>Tech: Go(Golang), Javascript/ReactJS/NodeJS, bash scripting, AWS Lambda/Step Functions/DynamoDB/Cloudwatch/EC2/SSM/S3.</li>
-              <li>Infrastructure & CI/CD: AWS ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Jenkins, Linux/RHEL/Debian/Windows, CircleCI, Nginx.</li>
+              <li>Infrastructure & CI/CD: AWS ECS/ECR/DynamoDB, Terraform, Ansible, Docker, Git, Github Actions, Jenkins, Linux/RHEL/Debian/Windows, CircleCI, Nginx.</li>
             </ul>
           </div>
 
