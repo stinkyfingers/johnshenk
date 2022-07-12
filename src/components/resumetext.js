@@ -18,11 +18,11 @@ const ResumeText = () => (
         <div className="leftAlign">
           <div>
             <ul className="objectiveList">
-              <li>7 years of professional full-stack software development experience.</li>
+              <li>8 years of professional full-stack software development experience.</li>
               <li>Career of architecting applications for distributed, cloud-based, serverless environments.</li>
               <li>Proficiency with multiple cloud infrastructures, platforms, languages, and tools (IaaS/PaaS).</li>
               <li>Experience developing applications, packages, and algorithms to digest complex data.</li>
-              <li>Leadership experience.</li>
+              <li>Leadership/mentorship experience.</li>
 
             </ul>
           </div>
@@ -36,7 +36,7 @@ const ResumeText = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | Javascript | ReactJS | NodeJS | MySql/MongoDB/NoSql | AWS | Docker | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning | Agile | Kubernetes
+          Go (Golang) | Kubernetes | Javascript | ReactJS | NodeJS | MySql/MongoDB/NoSql | AWS | Docker | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning | Agile
         </div>
       </div>
     </div>
@@ -53,11 +53,14 @@ const ResumeText = () => (
             <div>2021-current</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Build Kubernetes Operators & CRDs designed to make application deployments easier for teams and permit managers to enforce deployment policies.</li>
-              <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, managing CNAMEs, Framework yaml management.</li>
-              <li>Terraform providers.</li>
-              <li>Tech: Go(Golang), Kubernetes, Kubebuilder, bash scripting.</li>
+              <li>Built Kubernetes Controllers & CRDs designed to make application deployments easier for teams and permit managers to enforce deployment policies.</li>
+              <li>Implemented Job, CronJob, License, & Environment management in Shipa.</li>
+              <li>Implemented digestion of Custom Resource Events & Error Monitoring in Shipa.</li>
+              <li>Created RESTful endpoints & added integration with other Services.</li>
+              <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, CronJobs, managing CNAMEs, managing Environments, Framework yaml management, emission of “Ketch” CR Events, & acceptance tests. Terraform providers.</li>
+              <li>Tech: Go(Golang), Kubernetes, Kubebuilder, Helm, bash scripting.</li>
               <li>Infrastructure & CI/CD: Github Actions, TravisCI, Dockerhub, AWS/GCP.</li>
+              <li>Mentored junior developers.</li>
             </ul>
           </div>
 
@@ -67,7 +70,7 @@ const ResumeText = () => (
             <div>Software Engineer III</div>
             <ul className="jobDescription">
               <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
-              <li>Built largely serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
+              <li>Built serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
               <li>Built web application & API  to facilitate patching and schedule maintenance windows  of cloud resource pools.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
@@ -250,6 +253,14 @@ const ResumeText = () => (
       <div className="centerBox">
         <div className="leftAlign">
           <h3>Etc.</h3>
+            <div>Publication: &nbsp;
+                <a href="https://medium.com/@johnshenk77/testing-kubernetes-event-watchers-in-golang-a22eab17a1df" target="_blank" rel="noopener noreferrer">
+              Testing Kubernetes Event Watchers</a>
+            </div>
+            <div>Publication: &nbsp;
+                <a href="https://medium.com/@johnshenk77/ketch-jobs-a1069202cf97" target="_blank" rel="noopener noreferrer">
+              Managing Jobs with Ketch</a>
+            </div>
             <div>Publication: &nbsp;
                 <a href="https://medium.com/@johnshenk77/use-go-grpc-to-create-a-platform-that-implements-modules-in-other-languages-430949e22a1d" target="_blank" rel="noopener noreferrer">
               Use Go and gRPC to Create a Modular Platform</a>
