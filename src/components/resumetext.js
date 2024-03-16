@@ -36,7 +36,7 @@ const ResumeText = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | Kubernetes | Javascript | ReactJS | NodeJS | MySql/MongoDB/NoSql | AWS | Docker | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning | Agile
+          Go (Golang) | Javascript | ReactJS | NodeJS | Python | MySql/MongoDB/NoSql | AWS | Docker | Kubernetes | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning
         </div>
       </div>
     </div>
@@ -49,8 +49,21 @@ const ResumeText = () => (
           <h3>Experience</h3>
 
           <div className="job">
+            <h4>Demand Analytics - Remote</h4>
+            <div>2022-Present</div>
+            <div>Software Engineer</div>
+            <ul className="jobDescription">
+              <li>Built API endpoints and UI components to allow users to map seat sections in stadiums.</li>
+              <li>Built application components to manage Ticket hierarchies for data modeling.</li>
+              <li>Built tooling to Extract, Transform, & Load sales & attendance data for sports teams.</li>
+              <li>Tech: Go(Golang), ReactJS, Python, Postgres.</li>
+              <li>Infrastructure & CI/CD: AWS S3/RDS/ECR, Docker, Bitbucket Pipelines.</li>
+            </ul>
+          </div>
+
+          <div className="job">
             <h4>Shipa.io - Remote</h4>
-            <div>2021-current</div>
+            <div>2021-2022</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
               <li>Built Kubernetes Controllers & CRDs designed to make application deployments easier for teams and permit managers to enforce deployment policies.</li>
@@ -59,7 +72,7 @@ const ResumeText = () => (
               <li>Created RESTful endpoints & added integration with other Services.</li>
               <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, CronJobs, managing CNAMEs, managing Environments, Framework yaml management, emission of “Ketch” CR Events, & acceptance tests. Terraform providers.</li>
               <li>Tech: Go(Golang), Kubernetes, Kubebuilder, Helm, bash scripting.</li>
-              <li>Infrastructure & CI/CD: Github Actions, TravisCI, Dockerhub, AWS/GCP.</li>
+              <li>Infrastructure & CI/CD: Github Actions, TravisCI, Dockerhub, AWS/GCP, Terraform.</li>
               <li>Mentored junior developers.</li>
             </ul>
           </div>
