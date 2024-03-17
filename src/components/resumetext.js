@@ -15,16 +15,10 @@ const ResumeText = () => (
 
     <div className="objective textblock">
       <div className="centerBox">
-        <div className="leftAlign">
+        <div className="summary">
           <div>
-            <ul className="objectiveList">
-              <li>8 years of professional full-stack software development experience.</li>
-              <li>Career of architecting applications for distributed, cloud-based, serverless environments.</li>
-              <li>Proficiency with multiple cloud infrastructures, platforms, languages, and tools (IaaS/PaaS).</li>
-              <li>Experience developing applications, packages, and algorithms to digest complex data.</li>
-              <li>Leadership/mentorship experience.</li>
-
-            </ul>
+            Highly skilled software engineer with 10 years of experience in full-stack development, specializing in architecting applications for distributed, cloud-based environments. 
+            Proficient in multiple programming languages and cloud platforms, with a track record of building scalable and efficient solutions. Experienced leader and mentor.
           </div>
         </div>
       </div>
@@ -36,7 +30,7 @@ const ResumeText = () => (
       <div className="centerBox">
         <h3>Expertise</h3>
         <div>
-          Go (Golang) | Javascript | ReactJS | NodeJS | Python | MySql/MongoDB/NoSql | AWS | Docker | Kubernetes | Terraform | Git | HTML/CSS | Linux | RESTful APIs | CLIs | Project Planning
+          Go (Golang) | Javascript | ReactJS | NodeJS | Python | MySql | Postgres | MongoDB | AWS | Docker | Kubernetes | Terraform | Git | HTML/CSS | Linux 
         </div>
       </div>
     </div>
@@ -53,9 +47,9 @@ const ResumeText = () => (
             <div>2022-Present</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Built API endpoints and UI components to allow users to map seat sections in stadiums.</li>
-              <li>Built application components to manage Ticket hierarchies for data modeling.</li>
-              <li>Built tooling to Extract, Transform, & Load sales & attendance data for sports teams.</li>
+              <li>Built API endpoints and UI components for stadium seat mapping.</li>
+              <li>Built tools for data modeling and ETL processes</li>
+              <li>Built tools for sports event pricing management.</li>
               <li>Tech: Go(Golang), ReactJS, Python, Postgres.</li>
               <li>Infrastructure & CI/CD: AWS S3/RDS/ECR, Docker, Bitbucket Pipelines.</li>
             </ul>
@@ -66,14 +60,13 @@ const ResumeText = () => (
             <div>2021-2022</div>
             <div>Software Engineer</div>
             <ul className="jobDescription">
-              <li>Built Kubernetes Controllers & CRDs designed to make application deployments easier for teams and permit managers to enforce deployment policies.</li>
+              <li>Built Kubernetes Controllers & CRDs designed to streamline application deployments and enforce deployment policies.</li>
               <li>Implemented Job, CronJob, License, & Environment management in Shipa.</li>
               <li>Implemented digestion of Custom Resource Events & Error Monitoring in Shipa.</li>
-              <li>Created RESTful endpoints & added integration with other Services.</li>
-              <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, CronJobs, managing CNAMEs, managing Environments, Framework yaml management, emission of “Ketch” CR Events, & acceptance tests. Terraform providers.</li>
+              <li>Maintain OSS project Ketch (theketch.io). Implemented support for K8s Jobs, CronJobs, managing CNAMEs, managing Environments, Framework yaml management, emission of “Ketch” CR Events.</li>              
+              <li>Mentored junior developers.</li>
               <li>Tech: Go(Golang), Kubernetes, Kubebuilder, Helm, bash scripting.</li>
               <li>Infrastructure & CI/CD: Github Actions, TravisCI, Dockerhub, AWS/GCP, Terraform.</li>
-              <li>Mentored junior developers.</li>
             </ul>
           </div>
 
@@ -85,7 +78,7 @@ const ResumeText = () => (
               <li>Built CLI to provide customers ephemeral, monitored access to AWS EC2 resources via SSH through SSM tunnels.</li>
               <li>Built serverless APIs + backend to create, place, and retrieve temporary user credentials & ssh keys on AWS resources and provide resource state.</li>
               <li>Built web UI to provide authorized access to a user's AWS resource pool.</li>
-              <li>Built web application & API  to facilitate patching and schedule maintenance windows  of cloud resource pools.</li>
+              <li>Built web application & API to facilitate patching and schedule maintenance windows of cloud resource pools.</li>
               <li>Built web and CLI integration tests to assure proper functionality of components during CI runs.</li>
               <li>PCI Compliance.</li>
               <li>Hosted regular brown bag sessions demonstrating and explaining our tech.</li>
@@ -125,7 +118,7 @@ const ResumeText = () => (
             <div>2014-2016</div>
             <div>Web Developer II - eCommerce</div>
             <ul className="jobDescription">
-              <li>Developed public API for vehicle part fitment consumed by thousands of retailers, serving millions of requests. </li>
+              <li>Developed public API for vehicle part fitment consumed by thousands of retailers, serving millions of requests.</li>
               <li>Build multiple consumer-facing company websites.</li>
               <li>Implemented "Envision", a 3rd-party app that enabled users to visualize our products on their own vehicles.</li>
               <li>Engineered isomorphic apps to allow indexing by search engines for SEO benefits.</li>
@@ -143,21 +136,6 @@ const ResumeText = () => (
               <li>Tech: PHP, MySql, Javascript/JQuery, Codeigniter, HTML/CSS.</li>
             </ul>
           </div>
-
-          <h4 className="ital">Non-Software:</h4>
-
-          <div className="job">
-            <h4>Inter-State Studio - Eau Claire, WI</h4>
-            <div>2006 - 2014</div>
-            <div>Territory Manager</div>
-          </div>
-
-          <div className="job">
-            <h4>Shenk Products, Inc. (d/b/a Big Donkey Pizza) - Eau Claire, WI</h4>
-            <div>2010 - 2014</div>
-            <div>Owner</div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -249,13 +227,12 @@ const ResumeText = () => (
       <div className="centerBox">
         <div className="leftAlign">
           <h3>Professional References</h3>
-          <div>Matt George, Product Manager, Amazon Web Services (formerly Development Manager, Rackspace)  615-519-4950</div>
-          <div>Doug Valente, VP, Tideworks (fomerly COO, EvengX) 425-614-9970</div>
-          <div>Martín Quiroga, Product Manager, Lending Club (formerly Development Manager, EvengX)   415-307-6434</div>
-          <div>Rebecca June, Project Manager, Evengx 425-610-6143</div>
-          <div>PJ McGinley, eCommerce Bus. Manager, CUNA Mutual (formerly eCommerce Manager, Curt)  715-456-4039</div>
-          <div>Broc Seigneurie, Developer, CVTC  (former Coworker)    715-820-1432</div>
-          <div>Alex Ninneman, eCommerce Dev,  PowerChord (formerly Development Manager, Curt)  715-308-2604</div>
+          <div><a href="https://www.linkedin.com/in/dvalente/">Doug Valente, VP, Tideworks (fomerly COO, EvengX)</a></div>
+          <div><a href="https://www.linkedin.com/in/martinquiroga/">Martín Quiroga, Product Manager, Lending Club (formerly Development Manager, EvengX)</a></div>
+          <div><a href="https://www.linkedin.com/in/rjune/">Rebecca June, Project Manager, Evengx</a></div>
+          <div><a href="https://www.linkedin.com/in/p-j-mcginley-90b6171a/">PJ McGinley, eCommerce Bus. Manager, CUNA Mutual (formerly eCommerce Manager, Curt)</a></div>
+          <div><a href="https://www.linkedin.com/in/broc-seigneurie-24076449/">Broc Seigneurie, Developer, CVTC  (former Coworker)</a></div>
+          <div><a href="https://www.linkedin.com/in/ninnemana/">Alex Ninneman, eCommerce Dev,  PowerChord (formerly Development Manager, Curt)</a></div>
         </div>
       </div>
     </div>
