@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import ResumeText from './resumetext';
-
-const Plain = React.lazy(() => import('./plaincss'));
-const Normal = React.lazy(() => import('./normalcss'));
+import styles from '../css/resume.module.css';
+import plainstyles from '../css/plainresume.module.css';
 
 const queryString = (queryString) => {
   // note: does not support multiple values per key
@@ -18,13 +17,18 @@ const queryString = (queryString) => {
 
 const Resume = () => {
   const queries = queryString(window.location.search);
+  const plain = useMemo(() => {
+    return queries.format === 'plain';
+  }, [queries]);
 
   return (
-    <div className="resume">
-      <React.Suspense fallback={<ResumeText />}>
-        {queries.format === 'plain' ? <Plain /> : <Normal />}
-        <ResumeText />
-      </React.Suspense>
+    <div className={styles.resume}>
+      { plain ? null : (
+        <div className={styles.backgroundImage}>
+          <img src={require("../Photos/IMG_0981_low.jpg")} alt="Me with sunglasses."/>
+        </div>
+      )}
+      <ResumeText styles={plain ? plainstyles : styles } />
     </div>
 )};
 

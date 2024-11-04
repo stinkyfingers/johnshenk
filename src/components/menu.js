@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
-import '../css/menu.css';
+import styles from '../css/menu.module.css';
 
 const sites = [
   {name: 'Badlibs', url: `${window.location.protocol}//badlibs.john-shenk.com`},
@@ -21,14 +21,14 @@ const Menu = () => {
         <a href={site.url} target='blank' rel='noopener noreferrer'>{site.name}</a>
       </li>);
     });
-    return(<ul className='menuList'>{links}</ul>)
+    return(<ul className={styles.menuList}>{links}</ul>)
   }
 
   return (
-    <div className='menu'>
+    <div className={styles.menu}>
       {show ?
         <div>{renderMenuList(() => setShow(!show))}</div>
-        :<div className='menuButton' onClick={() => setShow(!show)}>MENU</div>}
+        :<div className={styles.menuButton} onClick={() => setShow(!show)}>External Links</div>}
     </div>
   );
 };

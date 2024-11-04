@@ -13,7 +13,10 @@ build
 .DS_Store
 .env
 npm-debug.log
+.idea*
+.yarn*
 
 # tf
 terraform/terraform.tfstate*
 terraform/.terraform
+

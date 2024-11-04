@@ -4,19 +4,6 @@
   text-align: right;
 }
 
-input[type=checkbox] {
-  transform: scale(1.5);
-}
-
-a:link, a:visited {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-a:hover {
-  color: #888;
-}
-
 .menuList>li {
   list-style: none;
 }
@@ -32,5 +19,9 @@ a:hover {
 }
 
 .menuButton {
-  margin-top: 1.5em
+  margin-top: 15%;
+}
+.menuButton:hover {
+  opacity: .4;
+  cursor: pointer;
 }

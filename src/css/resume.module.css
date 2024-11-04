@@ -1,14 +1,7 @@
-/* body {
-	color: rbga(20, 20, 20, .8);
-	font-family: courier;
-	font-size: .8em;
-	margin: 0;
-} */
 h4, h5, h6 {
 	margin: .1em;
 }
 .resume {
-	margin: 70px auto 0;
 	width: 100%;
 	overflow: hidden;
 }
@@ -23,7 +16,7 @@ h4, h5, h6 {
 	width: 100%;
 }
 .empty {
-	height: 12em;
+	height: 4em;
 }
 .small {
 	font-size: .6em;
