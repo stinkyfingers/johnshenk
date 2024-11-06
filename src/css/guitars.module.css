@@ -1,0 +1,23 @@
+.guitars {
+    padding: 1em 0;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    box-shadow: 5px 10px 10px gray;
+    padding: 1em;
+    width: 25vw;
+    margin: 1em;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 10px black;
+    opacity: .6;
+}
+.thumbnail {
+    height: 300px;
+}

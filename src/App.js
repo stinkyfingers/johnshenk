@@ -2,6 +2,7 @@ import React from 'react';
 import Toolbar from './components/toolbar';
 import Resume from './components/resume';
 import Guitars from './components/guitars/guitars';
+import Guitar from './components/guitars/guitar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from './css/app.module.css';
 
@@ -13,6 +14,7 @@ const App = () => (
         <Routes>
           <Route exact path="/" element={<Resume />}/>
           <Route exact path="/resume" element={<Resume />}/>
+          <Route exact path="/guitars/:name" element={<Guitar />}/>
           <Route exact path="/guitars" element={<Guitars />}/>
           <Route path="*" element={<Resume/>}/>
         </Routes>
