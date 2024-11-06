@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import config from '../../config';
+import { config } from '../../api';
 import ImageViewer from 'react-simple-image-viewer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera, faHome } from '@fortawesome/free-solid-svg-icons'
