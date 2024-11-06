@@ -9,7 +9,11 @@ import styles from '../../css/guitar.module.css';
 const Guitar = () => {
 	const { name } = useParams();
 	const [isOpen, setIsOpen] = React.useState(false);
-	const guitar = config.find((guitar) => guitar.name === name);
+	const [equipment, setEquipment] = React.useState([]);
+	React.useEffect(() => {
+		config().then((data) => setEquipment(data));
+	}, [config]);
+	const guitar = equipment.find((guitar) => guitar.name === name);
 	if (!guitar) return null;
 	return (
 		<div className={styles.guitar}>
