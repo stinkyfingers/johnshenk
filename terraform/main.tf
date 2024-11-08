@@ -1,13 +1,23 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"  # Adjust the version as necessary
+    }
+  }
+  required_version = ">= 1.0.0"
+}
+
 # vars
 variable "region" {
-  type = "string"
+  type = string
   default = "us-west-1"
 }
 
 # provider
 provider "aws" {
   profile = "jds"
-  region     = "${var.region}"
+  region     = var.region
 }
 
 # cloudfront
@@ -22,22 +32,27 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
 resource "aws_cloudfront_distribution" "s3_distribution" {
   aliases = ["john-shenk.com"]
   origin {
-    domain_name = "${aws_s3_bucket.john-shenk.bucket_domain_name}"
-    origin_id   = "${local.s3_origin_id}"
+    domain_name = aws_s3_bucket.john-shenk.bucket_domain_name
+    origin_id   = local.s3_origin_id
 
     s3_origin_config {
-      origin_access_identity = "${aws_cloudfront_origin_access_identity.origin_access_identity.cloudfront_access_identity_path}"
+      origin_access_identity = aws_cloudfront_origin_access_identity.origin_access_identity.cloudfront_access_identity_path
     }
   }
 
   enabled             = true
   is_ipv6_enabled     = false
   default_root_object = "index.html"
+  custom_error_response {
+    error_code = 403
+    response_code = 200
+    response_page_path = "/index.html"
+  }
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "${local.s3_origin_id}"
+    target_origin_id = local.s3_origin_id
 
     forwarded_values {
       query_string = false
@@ -73,25 +88,40 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 # bucket
 resource "aws_s3_bucket" "john-shenk" {
   bucket = "john-shenk.com"
-  acl = "private"
-  policy = <<EOF
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Cloudfront Read",
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "${aws_cloudfront_origin_access_identity.origin_access_identity.iam_arn}"
-            },
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::john-shenk.com/*"
-        }
-    ]
-}
-EOF
+#  acl = "private"
+#  policy = <<EOF
+#{
+#    "Version": "2012-10-17",
+#    "Statement": [
+#        {
+#            "Sid": "Cloudfront Read",
+#            "Effect": "Allow",
+#            "Principal": {
+#                "AWS": "${aws_cloudfront_origin_access_identity.origin_access_identity.iam_arn}"
+#            },
+#            "Action": "s3:GetObject",
+#            "Resource": "arn:aws:s3:::john-shenk.com/*"
+#        }
+#    ]
+#}
+#EOF
 }
 
+resource aws_s3_bucket_policy john-shenk {
+  bucket = aws_s3_bucket.john-shenk.bucket
+  policy = data.aws_iam_policy_document.s3_bucket_policy.json
+}
+
+data "aws_iam_policy_document" "s3_bucket_policy" {
+  statement {
+    actions = ["s3:GetObject"]
+    resources = ["${aws_s3_bucket.john-shenk.arn}/*"]
+    principals {
+      type = "AWS"
+      identifiers = [aws_cloudfront_origin_access_identity.origin_access_identity.iam_arn]
+    }
+  }
+}
 
 # backend
 terraform {

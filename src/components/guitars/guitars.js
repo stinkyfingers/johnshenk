@@ -55,7 +55,7 @@ const Guitars = () => {
 	const [equipment, setEquipment] = React.useState([]);
 	React.useEffect(() => {
 		config().then((data) => setEquipment(data));
-	}, [config]);
+	}, []);
 	return (
 		<div className={styles.guitars}>
 			{categories.map((category) => (

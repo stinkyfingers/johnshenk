@@ -16,7 +16,12 @@
     font-size: 2em;
     padding: 0 1em 0 0;
 }
-.cameraIcon:hover, .backIcon:hover {
+.cameraIcon:hover, .backIcon:hover, .thumbnail:hover {
     cursor: pointer;
     opacity: .4;
+}
+.text {
+    max-width: 50vw;
+    margin: auto;
+    padding: 1em 0;
 }

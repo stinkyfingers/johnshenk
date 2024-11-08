@@ -12,7 +12,7 @@ const Guitar = () => {
 	const [equipment, setEquipment] = React.useState([]);
 	React.useEffect(() => {
 		config().then((data) => setEquipment(data));
-	}, [config]);
+	}, []);
 	const guitar = equipment.find((guitar) => guitar.name === name);
 	if (!guitar) return null;
 	return (
@@ -21,7 +21,7 @@ const Guitar = () => {
 				<FontAwesomeIcon icon={faHome} onClick={() => window.history.back()} className={styles.backIcon} />
 			</div>
 			<h1>{guitar.name}</h1>
-			<img src={guitar.mainImage} alt={guitar.name} className={styles.thumbnail}/>
+			<img onClick={() => setIsOpen(true)} src={guitar.mainImage} alt={guitar.name} className={styles.thumbnail}/>
 			<div>
 				<FontAwesomeIcon
 					icon={faCamera}
@@ -29,7 +29,7 @@ const Guitar = () => {
 					className={styles.cameraIcon}
 				/>
 			</div>
-			<p>{guitar.text}</p>
+			<p className={styles.text}>{guitar.text}</p>
 			{ isOpen ? (
 				<ImageViewer
 					src={guitar.images}
