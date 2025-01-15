@@ -10,7 +10,6 @@
 .card {
     box-shadow: 5px 10px 10px gray;
     padding: 1em;
-    width: 25vw;
     margin: 1em;
 }
 .card:hover {
@@ -20,4 +19,5 @@
 }
 .thumbnail {
     height: 300px;
+    max-width: 200px;
 }
