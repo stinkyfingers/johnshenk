@@ -21,8 +21,8 @@ const ResumeText = ({ styles }) => {
         <div className={styles.centerBox}>
           <div className={styles.summary}>
             <div>
-              Highly skilled software engineer with 10 years of experience in full-stack development, specializing in architecting applications for distributed, cloud-based environments.
-              Proficient in multiple programming languages and cloud platforms, with a track record of building scalable and efficient solutions. Experienced leader and mentor.
+              Highly skilled software engineer with 11 years of experience in full-stack development and infrastructure, specializing in architecting applications for distributed, cloud-based environments.
+              Proficient in multiple programming languages, frameworks, and infrastructure management tools, with a track record of building scalable and efficient solutions.
             </div>
           </div>
         </div>
@@ -47,18 +47,26 @@ const ResumeText = ({ styles }) => {
             <h3>Experience</h3>
 
             <div className={styles.job}>
-              <h4>Demand Analytics - Remote</h4>
+              <h4>Rightshelper (formerly Demand Analytics) - Remote</h4>
               <div>2022-Present</div>
               <div>Software Engineer</div>
               <ul className={styles.jobDescription}>
-                <li>Built API and UI for stadium seat mapping.</li>
-                <li>Built API and UI for ticket management.</li>
-                <li>Built API and UI for pricing guardrails.</li>
-                <li>Built API and UI for historical sales comparison graphs & tables.</li>
-                <li>Built ticket sales and pricing ETL processes.</li>
-                <li>Built tools for sports event pricing management.</li>
+                <li>Created our auth flow -  implemented Auth0 as a Service Provider to integrate with internal auth and external IT teams’ Identity Providers.</li>
+                <li>Worked directly with IT teams to set up and debug SFTP service.</li>
+                <li>Built ETL process to generate historical sales and forecasts, allowing users to compare historical forecast accuracy.</li>
+                <li>Built processes to allow internal users to run partial ETLs, generating daily pricing and events changes without modifying venues.</li>
+                <li>Built API and consumer-facing UI for:
+                  <ul>
+                    <li>Historical sales & forecast  charts and graphs.</li>
+                    <li>Ticket management.</li>
+                    <li>Pricing management and revision history.</li>
+                    <li>Venue management and seat plotting.</li>
+                    <li>Managing pricing rules and thresholds.</li>
+                  </ul>
+                </li>
+                <li>Ported legacy applications to AWS and updated infrastructure.</li>
                 <li>Tech: Go(Golang), ReactJS, Python, Postgres.</li>
-                <li>Infrastructure & CI/CD: AWS S3/RDS/ECR, Docker, Bitbucket Pipelines.</li>
+                <li>Infrastructure & CI/CD: AWS EC2/SSM/S3/RDS/ECR, Docker, Bitbucket Pipelines.</li>
               </ul>
             </div>
 
