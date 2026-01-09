@@ -47,7 +47,7 @@ const ResumeText = ({ styles }) => {
             <h3>Experience</h3>
 
             <div className={styles.job}>
-              <h4>Rightshelper (formerly Demand Analytics) - Remote</h4>
+              <h4>Demand Analytics - Remote</h4>
               <div>2022-Present</div>
               <div>Software Engineer</div>
               <ul className={styles.jobDescription}>
