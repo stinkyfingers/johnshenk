@@ -1,24 +1,54 @@
 .toolbar {
-	background: #000;
-	color: white;
+	background: rgba(11, 11, 13, .72);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-bottom: 1px solid var(--color-border);
+	color: var(--color-text);
 	width: 100%;
 	top: 0;
-	height: 50px;
+	height: 56px;
 	-webkit-overflow-scrolling: touch;
 	position: fixed;
+	z-index: 10;
 }
 .links {
 	height: 100%;
 	align-items: center;
 	display: flex;
-	justify-content: space-evenly;
-}
-.toolbarButton:hover {
-	opacity: .4;
-	cursor: pointer;
+	justify-content: center;
+	gap: var(--space-4);
 }
 .toolbarButton {
 	border: none;
 	background: none;
-	color: white;
+	color: var(--color-text-muted);
+	font-family: inherit;
+	font-size: .95rem;
+	letter-spacing: .01em;
+	padding: .4em 0;
+	position: relative;
+	cursor: pointer;
+	transition: color var(--transition-fast);
+}
+.toolbarButton::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 100%;
+	bottom: -2px;
+	height: 2px;
+	background: var(--color-accent);
+	transition: right var(--transition-base);
+}
+.toolbarButton:hover,
+.toolbarButton:focus-visible {
+	color: var(--color-text);
+}
+.toolbarButton:hover::after,
+.toolbarButton:focus-visible::after {
+	right: 0;
+}
+.toolbarButton:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 4px;
 }
