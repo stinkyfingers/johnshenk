@@ -17,7 +17,7 @@
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "https": "HTTPS=true react-scripts start",
-    "dev": "react-scripts start",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider PORT=3333 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

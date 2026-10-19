@@ -1,34 +1,39 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import styles from '../css/menu.module.css';
 
 const sites = [
   {name: 'Badlibs', url: `${window.location.protocol}//badlibs.john-shenk.com`},
   {name: 'Scribblefest', url: `${window.location.protocol}//scribblefest.john-shenk.com`},
   {name: 'Bulls & Cows', url: `${window.location.protocol}//bullsandcows.john-shenk.com`},
-  {name: 'Difference Between', url: `${window.location.protocol}//differencebetween.john-shenk.com`}
 ];
 
 const Menu = () => {
   const [show, setShow] = useState(false);
 
-  const renderMenuList = (closeFn) => {
-    const links = [<FontAwesomeIcon key='close' icon={faWindowClose} onClick={closeFn} />];
-
-    sites.forEach((site) => {
-      links.push(<li key={site.name}>
-        <a href={site.url} target='blank' rel='noopener noreferrer'>{site.name}</a>
-      </li>);
-    });
-    return(<ul className={styles.menuList}>{links}</ul>)
-  }
-
   return (
     <div className={styles.menu}>
-      {show ?
-        <div>{renderMenuList(() => setShow(!show))}</div>
-        :<div className={styles.menuButton} onClick={() => setShow(!show)}>External Links</div>}
+      <button
+        type="button"
+        className={styles.menuButton}
+        aria-haspopup="true"
+        aria-expanded={show}
+        aria-controls="external-links-menu"
+        aria-label="External links"
+        onClick={() => setShow((prev) => !prev)}
+      >
+        <FontAwesomeIcon icon={faArrowUpRightFromSquare} aria-hidden="true" />
+      </button>
+      {show && (
+        <ul id="external-links-menu" className={styles.menuList} role="menu" aria-label="External links">
+          {sites.map((site) => (
+            <li key={site.name} role="none">
+              <a href={site.url} target="_blank" rel="noopener noreferrer" role="menuitem">{site.name}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
